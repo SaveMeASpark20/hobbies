@@ -1,0 +1,218 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.navigator {
+    background-image: linear-gradient(to bottom, rgba(9,24,121, 1), rgba(0,249,255, .8));
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+}
+
+.navbar-link {
+    color: white;
+}
+
+.navbar-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-link li {
+    list-style: none;
+    transition: 1s;
+}
+
+.navbar-link li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-link li:hover {
+    background-color: rgba(0,249,255, .2);
+}
+
+.title-section {
+    text-align: center;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; 
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.basketball {
+    text-align: center;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.basketball .overlay {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background-image: radial-gradient(rgba(0,249,255, .5), rgba(9,24,121, .5));
+    top: 25%;
+    right: 25%;
+}
+
+.basketball img {
+    width: 98%;
+    margin-top: -20px;
+}
+
+.basketball .description-basketball {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    text-align: end;
+    width: 35%;
+}
+
+.web-development {
+    text-align: center;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.web-development img {
+    width: 98%;  
+}
+
+.web-development .description-web-development {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    text-align: start;
+    width: 35%;
+}
+
+.biking {
+    text-align: center;
+    position: relative;
+}
+
+.biking img {
+    width: 98%;  
+}
+
+.biking .description-biking {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 35%;
+    translate: 50%;
+}
+
+footer {
+    color: black;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    margin: 1rem;
+}
+
+@media (max-width:900px) {
+    .toggle-button {
+        display: flex;  /*para makita */
+    }
+
+    .toggle-button:hover {
+        background-color: rgba(0,249,255, .2);
+    }
+    .navbar-link {
+        display: none;  /*a di makita yung mga links*/
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link ul{
+        width: 100%;
+        flex-direction: column;   
+    }
+
+    .navbar-link li {
+        text-align: center;
+    }
+
+    .navbar-link li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-link.active {
+        display: flex;
+    }
+    
+    .title-section {
+        font-size: 3rem;
+
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
